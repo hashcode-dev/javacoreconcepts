@@ -14,7 +14,7 @@ public class MethodOverloading {
     }
 
     public void disPlayName(){
-        System.out.println("Name: " + name);
+        System.out.println("MethodOverloading Name: " + name);
     }
 
     //Even though the return type is different from above method
@@ -31,10 +31,11 @@ public class MethodOverloading {
 
     public void disPlayName(String newName){
         this.name = newName;
-        System.out.println("Name: " + name);
+        System.out.println("MethodOverloading Name: " + name);
     }
 
     public static void main(String[] args) {
-
+        MethodOverloading methodOverloading = new MethodOverloading("John", "Doe");
+        methodOverloading.disPlayName();
     }
 }
