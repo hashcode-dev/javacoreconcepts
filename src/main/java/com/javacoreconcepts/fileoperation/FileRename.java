@@ -9,7 +9,7 @@ import java.util.Map;
 public class FileRename {
     public static void main(String[] args) {
         // Replace with the path to your folder
-        String folderPath = "/Users/gauravsahu/Downloads/BulkVideos";
+        String folderPath = "/Users/gauravsahu/Downloads/BulkVideosV3";
         // Replace with the name of your CSV file
         String csvFilePath = "/Users/gauravsahu/Downloads/filerename.csv";
 
@@ -28,7 +28,7 @@ public class FileRename {
             while ((line = br.readLine()) != null) {
                 String[] names = line.split(",");
                 if (names.length == 4) {
-                    renameMap.put(names[1], names[2]);
+                    renameMap.put(names[1], names[3]);
                 }
             }
         } catch (Exception e) {
